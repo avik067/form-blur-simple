@@ -37,6 +37,7 @@ class RegistrationForm extends Component {
     const {fName, lName} = this.state
     if (fName === '' || lName === '') {
       console.log('Not Submitted')
+      this.setState({fblur: true, lblur: true})
     } else {
       console.log('Submitted')
       this.setState({submit: false})
